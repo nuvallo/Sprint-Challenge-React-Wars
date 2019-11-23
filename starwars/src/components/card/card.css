@@ -1,9 +1,13 @@
-.card-div {
-  margin: 5% auto;
+.card {
   max-width: 205px;
-  line-height: 2.5;
+  line-height: 2.1;
   background: rgba(93, 94, 65, 0.568) !important;
   color: #fff;
+  max-height: 400px;
+}
+
+.container {
+  display: inline;
 }
 
 .btn {

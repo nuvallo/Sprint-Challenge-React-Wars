@@ -2,26 +2,26 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Card from "./card/card";
 
-export default function StarWarData() {
-  const [Data, setData] = useState([]);
+export default function StarWarsPeople() {
+  const [people, setPeople, starShip, setStarShip] = useState([]);
 
-  const Swapi = () => {
-    // step 3 -> axios calls API
+  const People = () => {
     axios
       .get("https://swapi.co/api/people")
       .then(response => {
-        setData(response.data.results);
+        setPeople(response.data.results);
         console.log(response.data);
       })
       .catch(error => console.log(error));
   };
 
-  useEffect(Swapi, []);
+  useEffect(People, []);
 
-  return Data.map(DataValue => {
+  return people.map(DataValue => {
     return (
       <Card
         name={DataValue.name}
+        StarShip={DataValue.name}
         height={DataValue.height}
         hairColor={DataValue.hair_color}
         birthYear={DataValue.birth_year}
