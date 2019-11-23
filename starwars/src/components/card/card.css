@@ -1,0 +1,15 @@
+.card-div {
+  margin: 5% auto;
+  max-width: 205px;
+  line-height: 2.5;
+  background: rgba(93, 94, 65, 0.568) !important;
+  color: #fff;
+}
+
+.btn {
+  background: #333 !important;
+}
+
+.title {
+  font-size: 30px;
+}
