@@ -15,3 +15,4 @@ React uses a Virtual DOM engine, that does the heavy lifting. When building your
    Props are Properties. They are unchangeable pieces of data that can flow from the parent to the child. Props allow reusable code.
 
 1. What are side effects, and how do you sync effects in a React component to state or prop changes?
+   A "side effect" is anything that affects something outside the scope of the function being executed.
